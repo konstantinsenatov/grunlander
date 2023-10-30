@@ -1,0 +1,67 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+	&::before,&::after{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transition: all 0.3s ease 0s;
+	}
+	&::before{
+		background: url('../images/bg-color-yellow.png') 0 0 / 100% 100% no-repeat;
+		opacity: 1;
+	}
+	&::after{
+		opacity: 0;
+		background: url('../images/bg-color-green.png') 0 0 / 100% 100% no-repeat;
+	}
+	&.js-active{
+		&::before{
+			opacity: 0;
+		}
+		&::after{
+			opacity: 1;
+		}
+	}
+	.main {
+		flex: 1 1 auto;
+	}
+}
+.container{
+	width: 1070px;
+	padding: 0 5px;
+	margin: 0 auto;
+	max-width: 100%;
+	@media (max-width: 1440px){
+		width: 74.31vw;
+		padding: 0 0.35vw;
+	}
+	@media (max-width: 768px){
+		width: 100%;
+		padding: 0 6.67vw;
+	}
+}
+.desk {
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+.mob {
+	display: none;
+	@media (max-width: 768px){
+		display: block;
+	}
+}
+.button-switcher-anim {
+	background: green;
+	box-shadow: 0 -100px 100px -40px green inset, 0 0px 20px 0px green;
+	transition: all 0.3s ease 0s;
+	&:hover{
+		box-shadow: 0 -100px 100px -40px green inset, 0 0px 20px 10px green;
+	}
+}

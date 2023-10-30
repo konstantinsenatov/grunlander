@@ -1,0 +1,214 @@
+.hero {
+	position: relative;
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 860px;
+		@media (max-width: 1440px){
+			height: 59.72vw;
+		}
+		@media (max-width: 768px){
+			height: 193vw;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__container {
+		width: 1440px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 190px;
+		@media (max-width: 1440px){
+			padding: 0 13.19vw;
+		}
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 6.94vw 0 0;
+		}
+
+	}
+	&__leafs-full-width {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200px;
+		height: 150px;
+		z-index: 10;
+		background: url('../images/hero/leafs-full-width.png') 0 0 / 100% 100% no-repeat;
+		@media (max-width: 1440px){
+			width: 13.89vw;
+			height: 10.42vw;
+		}
+		@media (max-width: 768px){
+			background: url('../images/hero/leafs-full-width-mob.png') 0 0 / 100% 100% no-repeat;
+			width: 100%;
+			height: 140vw;
+		}
+	}
+	&__body {
+		position: relative;
+		z-index: 10;
+		max-width: 520px;
+		padding-top: 138px;
+		@media (max-width: 1440px){
+			max-width: 36.11vw;
+			padding-top: 9.58vw;
+		}
+		@media (max-width: 768px){
+			max-width: 80%;
+			margin-top: 5.56vw;
+			padding: 0;
+		}
+	}
+	&__title {
+		font-family: 'Lifehack Sans';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 80px;
+		line-height: 80px;
+		letter-spacing: 0.025em;
+		color: #FFFFFF;
+		@media (max-width: 1440px){
+			font-size: 5.56vw;
+			line-height: 5.56vw;
+		}
+		@media (max-width: 768px){
+			font-size: 11.39vw;
+			line-height: 11.39vw;
+			text-align: center;
+		}
+		span {
+			position: relative;
+			&::before,&::after{
+				content:'';
+				display: inline-block;
+			}
+			&::before{
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translate(-80%, 30%);
+				width: 35px;
+				height: 35px;
+				background: url('../images/hero/leaf-title-start.svg') 0 0 / 100% 100% no-repeat;
+				@media (max-width: 1440px){
+					width: 2.43vw;
+					height: 2.43vw;
+				}
+				@media (max-width: 768px){
+					width: 4.44vw;
+					height: 3.89vw;
+				}
+			}
+			&::after{
+				position: static;
+				transform: translate(0%, 0%);
+				width: 50px;
+				height: 62px;
+				background: url('../images/hero/leaf-title-end.svg') 0 0 / 100% 100% no-repeat;
+				@media (max-width: 1440px){
+					width: 3.47vw;
+					height: 4.31vw;
+				}
+				@media (max-width: 768px){
+					width: 6.11vw;
+					height: 8.89vw;
+				}
+			}
+		}
+	}
+	&__text {
+		font-family: 'Circe';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 135.9%;
+		color: #FFFFFF;
+		opacity: 0.8;
+		margin-top: 6px;
+		@media (max-width: 1440px){
+			margin-top: 0.42vw;
+			font-size: 1.39vw;
+		}
+		@media (max-width: 768px){
+			margin-top: 1.67vw;
+			font-size: 4vw;
+			text-align: center;
+		}
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		margin-top: 60px;
+		@media (max-width: 1440px){
+			margin-top: 4.17vw;
+		}
+		@media (max-width: 768px){
+			margin-top: 90vw;
+			flex-direction: column;
+		}
+		img {
+			width: 48px;
+			height: 48px;
+			margin-right: 15px;
+			display: block;
+			@media (max-width: 1440px){
+				width: 3.33vw;
+				height: 3.33vw;
+				margin-right: 1.04vw;
+			}
+			@media (max-width: 768px){
+				width: 9.17vw;
+				height: 9.17vw;
+				margin-top: 3.06vw;
+			}
+		}
+		span {
+			font-family: 'Circe';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 28px;
+			color: #FFFFFF;
+			opacity: 0.8;
+			@media (max-width: 1440px){
+				font-size: 1.67vw;
+				line-height: 1.94vw;
+			}
+			@media (max-width: 768px){
+				font-size: 4vw;
+				line-height: 100%;
+				text-align: center;
+				order: -1;
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		right: 0;
+		width: 770px;
+		height: 700px;
+		@media (max-width: 1440px){
+			width: 53.47vw;
+			height: 48.61vw;
+		}
+		@media (max-width: 768px){
+			top: 38%;
+			width: 80vw;
+			height: 85vw;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe_ExtraBold/Circe_ExtraBold.eot');
+	src: local('Circe_ExtraBold'), local('../fonts/Circe_ExtraBold/Circe_ExtraBold'),
+		url('../fonts/Circe_ExtraBold/Circe_ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe_ExtraBold/Circe_ExtraBold.woff') format('woff'),
+		url('../fonts/Circe_ExtraBold/Circe_ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe_Bold/Circe_Bold.eot');
+	src: local('Circe_Bold'), local('../fonts/Circe_Bold/Circe_Bold'),
+		url('../fonts/Circe_Bold/Circe_Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe_Bold/Circe_Bold.woff') format('woff'),
+		url('../fonts/Circe_Bold/Circe_Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe_Regular/Circe_Regular.eot');
+	src: local('Circe_Regular'), local('../fonts/Circe_Regular/Circe_Regular'),
+		url('../fonts/Circe_Regular/Circe_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe_Regular/Circe_Regular.woff') format('woff'),
+		url('../fonts/Circe_Regular/Circe_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lifehack Sans';
+	src: url('../fonts/LifehackSans_Bold/LifehackSans_Bold.eot');
+	src: local('LifehackSans_Bold'), local('../fonts/LifehackSans_Bold/LifehackSans_Bold'),
+		url('../fonts/LifehackSans_Bold/LifehackSans_Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/LifehackSans_Bold/LifehackSans_Bold.woff') format('woff'),
+		url('../fonts/LifehackSans_Bold/LifehackSans_Bold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
